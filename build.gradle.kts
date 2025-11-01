@@ -3,12 +3,11 @@ plugins {
 	kotlin("plugin.spring") version "2.2.20"
 	id("org.springframework.boot") version "4.0.0-RC1"
 	id("io.spring.dependency-management") version "1.1.7"
-	id("org.graalvm.buildtools.native") version "0.11.2"
+//	id("org.graalvm.buildtools.native") version "0.11.2"
 }
 
 group = "dev.barbulescu"
 version = "0.0.1-SNAPSHOT"
-description = "Demo project for Spring Boot"
 
 java {
 	toolchain {
@@ -53,14 +52,14 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-opentelemetry-test")
 	testImplementation("org.springframework.boot:spring-boot-starter-webclient-test")
 	testImplementation("org.springframework.boot:spring-boot-starter-webflux-test")
-//	testImplementation("org.springframework.boot:spring-boot-testcontainers")
+	testImplementation("org.springframework.boot:spring-boot-testcontainers")
 	testImplementation("io.projectreactor:reactor-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test")
-//	testImplementation("org.testcontainers:testcontainers-grafana")
-//	testImplementation("org.testcontainers:testcontainers-junit-jupiter")
-//	testImplementation("org.testcontainers:testcontainers-postgresql")
-//	testImplementation("org.testcontainers:testcontainers-r2dbc")
+	testImplementation("org.testcontainers:testcontainers-grafana")
+	testImplementation("org.testcontainers:testcontainers-junit-jupiter")
+	testImplementation("org.testcontainers:testcontainers-postgresql")
+	testImplementation("org.testcontainers:testcontainers-r2dbc")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
