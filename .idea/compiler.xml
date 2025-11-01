@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-configuration-processor/4.0.0-RC1/cafdc763156dd8e6dae5db267ff82fb45fa7ab72/spring-boot-configuration-processor-4.0.0-RC1.jar" />
+        </processorPath>
+        <module name="spring7.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="24" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-parameters" />
+  </component>
+</project>
