@@ -1,1 +1,1 @@
-rootProject.name = "spring7"
+rootProject.name = "spring-boot-4"
